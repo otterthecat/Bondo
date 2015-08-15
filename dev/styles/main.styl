@@ -3,20 +3,19 @@
 
 @import './blocks'
 @import './variables'
+@import './mixins'
 
 body
   background: baseColor
   font-family: primaryFont
-  font-size: 1.4rem
-  line-height: 1.6rem
   margin: 0
   minWidth: minWidth
   padding: 0
 
-header
-  span(1)
+.page-header
+  cf(span(1))
   background: darken(baseColor, 80%)
-  height: 60px
+  height: 6rem
 
   menu
     center(maxWidth)
@@ -28,20 +27,28 @@ header
       text-align: center
 
 .banner
-  span(1)
+  cf(span(1))
   background: highlightColor
   color: neutralLight
   height: 300px
+  padding: 2rem
 
-  h1
-    center(maxWidth)
-
-.main-content
+.page-content
   center(maxWidth)
   border: 1px solid darken(baseColor, 20%)
-  min-height: 600px
+  min-height: 60rem
+  padding: 1rem 2rem
 
-.main-footer
+.page-footer
   center(maxWidth)
   background: accentColor
   padding: 2.5rem
+
+.error
+  notify(errorColor)
+
+.success
+  notify(successColor)
+
+.warning
+  notify(warningColor)
