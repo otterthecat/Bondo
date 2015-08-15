@@ -1,10 +1,20 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
 div,
 header,
 footer,
 nav,
+menu,
 section,
 form,
 fieldset,
+label,
+textarea,
 aside,
 ul,
 ol,
@@ -19,9 +29,40 @@ h6 {
   margin: 0;
   padding: 0;
 }
+ol,
+li {
+  list-style-type: none;
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+h3 {
+  font-size: 2.2rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+h5 {
+  font-size: 1.6rem;
+}
 body {
   background: #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   margin: 0;
+  minWidth: 46rem;
   padding: 0;
 }
 header {
@@ -43,6 +84,52 @@ header:after {
 header:after {
   clear: both;
 }
+header menu {
+  *zoom: 1;
+  width: auto;
+  max-width: 120rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+header menu:before,
+header menu:after {
+  content: '';
+  display: table;
+}
+header menu:after {
+  clear: both;
+}
+header menu li {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+  color: #e6e6e6;
+  font-size: 1.6rem;
+  text-align: center;
+}
+header menu li:before,
+header menu li:after {
+  content: '';
+  display: table;
+}
+header menu li:after {
+  clear: both;
+}
+header menu li:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+header menu li:nth-child(3n+1) {
+  clear: both;
+}
 .banner {
   *zoom: 1;
   float: left;
@@ -52,6 +139,7 @@ header:after {
   margin-left: 0%;
   margin-right: 0%;
   background: #a0047e;
+  color: #e6e6e6;
   height: 300px;
 }
 .banner:before,
@@ -62,10 +150,29 @@ header:after {
 .banner:after {
   clear: both;
 }
+.banner h1 {
+  *zoom: 1;
+  width: auto;
+  max-width: 120rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.banner h1:before,
+.banner h1:after {
+  content: '';
+  display: table;
+}
+.banner h1:after {
+  clear: both;
+}
 .main-content {
   *zoom: 1;
   width: auto;
-  max-width: 980px;
+  max-width: 120rem;
   float: none;
   display: block;
   margin-right: auto;
@@ -81,5 +188,26 @@ header:after {
   display: table;
 }
 .main-content:after {
+  clear: both;
+}
+.main-footer {
+  *zoom: 1;
+  width: auto;
+  max-width: 120rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background: #9577ab;
+  padding: 2.5rem;
+}
+.main-footer:before,
+.main-footer:after {
+  content: '';
+  display: table;
+}
+.main-footer:after {
   clear: both;
 }
