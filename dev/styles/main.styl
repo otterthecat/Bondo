@@ -4,7 +4,7 @@
 @import './blocks'
 @require './variables'
 @import './mixins'
-//@import './theme'
+@import './mixins/themes'
 
 body
   background: baseColor
@@ -28,7 +28,7 @@ body
 
 .banner
   cf(span(1))
-  background: highlightColor
+  @extends $themeBgColor
   color: neutralLight
   height: 300px
 
