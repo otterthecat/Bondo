@@ -19,31 +19,45 @@
       </header>
 
       <section class="banner">
-        <h1>H1 Banner Header</h1>
-        <h2>H2 Banner Header</h2>
-        <h3>H3 Banner Header</h3>
-        <h4>H4 Banner Header</h4>
-        <h5>H5 Banner Header</h5>
-        <h6>H6 Banner Header</h6>
+        <div>
+          <h1>H1 Banner Header</h1>
+          <h2>H2 Banner Header</h2>
+          <h3>H3 Banner Header</h3>
+          <h4>H4 Banner Header</h4>
+          <h5>H5 Banner Header</h5>
+          <h6>H6 Banner Header</h6>
+        </div>
       </section>
 
       <section class="page-content">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          Lorem <a href=''>ipsum dolor</a> sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+
+        <form>
+          <fieldset>
+            <legend>Test Form</legend>
+            <label for="one">Label One</label>
+            <input id="one" type="text">
+
+            <label for="two">Label Two<input id="two" type="text"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Text Area</legend>
+            <label>
+              Enter Something:
+              <textarea></textarea>
+            </label>
+          </fieldset>
+
+          <button>Submit</button>
+        </form>
 
         <p class="error">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -66,6 +80,8 @@
         </p>
       </section>
 
-      <footer class="page-footer"></footer>
+      <footer class="page-footer">
+        <div>Page Footer</div>
+      </footer>
     </body>
 </html>

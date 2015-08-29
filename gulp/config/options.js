@@ -9,7 +9,7 @@ var complexityOpts = {
 module.exports = {
 
     browserSync: {
-        proxy: 'localhost/github/stylus-stuff/public'
+        proxy: 'localhost/github/bondo/public'
     },
 
     plato: {

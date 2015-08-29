@@ -2,15 +2,15 @@
 @import 'rupture'
 
 @import './blocks'
-@import './variables'
+@require './variables'
 @import './mixins'
+@import './theme'
 
 body
   background: baseColor
   font-family: primaryFont
   margin: 0
   minWidth: minWidth
-  padding: 0
 
 .page-header
   cf(span(1))
@@ -31,18 +31,23 @@ body
   background: highlightColor
   color: neutralLight
   height: 300px
-  padding: 2rem
+
+  div
+    center(maxWidth)
+    padding: 2rem
 
 .page-content
   center(maxWidth)
-  border: 1px solid darken(baseColor, 20%)
   min-height: 60rem
   padding: 1rem 2rem
 
 .page-footer
-  center(maxWidth)
+  cf(span(1))
   background: accentColor
-  padding: 2.5rem
+
+  div
+    center(maxWidth)
+    padding: 2rem
 
 .error
   notify(errorColor)

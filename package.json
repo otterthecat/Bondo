@@ -1,12 +1,12 @@
 {
-  "name": "stylus-stuff",
+  "name": "bondo",
   "version": "0.0.1",
-  "description": "stuff",
+  "description": "It's like spackle for your site",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Otter the Cat",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.8.2",

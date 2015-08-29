@@ -23,6 +23,7 @@ h4,
 h5,
 h6 {
   box-sizing: border-box;
+  display: block;
   margin: 0;
   padding: 0;
 }
@@ -37,6 +38,37 @@ a:visited {
 }
 p {
   padding: 0 0 2rem;
+}
+form,
+fieldset {
+  padding: 1rem;
+}
+input[type='text'],
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+label input[type='text'],
+label select,
+label textarea {
+  display: block;
+}
+label.inline input,
+label.inline select,
+label.inline input[type='text'] {
+  display: inline-block;
+  margin-left: 1rem;
+}
+input,
+textarea {
+  font-size: 2.2rem;
+}
+textarea {
+  height: 30rem;
+}
+button {
+  padding: 1rem 2rem;
 }
 html {
   font-size: 62.5%;
@@ -63,12 +95,14 @@ h5 {
 h6 {
   font-size: 2rem;
 }
+a {
+  color: #a0047e;
+}
 body {
   background: #ccc;
   font-family: Arial, sans-serif;
   margin: 0;
   minWidth: 46rem;
-  padding: 0;
 }
 .page-header {
   *zoom: 1;
@@ -134,7 +168,6 @@ body {
   background: #a0047e;
   color: #e6e6e6;
   height: 300px;
-  padding: 2rem;
 }
 .banner:before,
 .banner:after {
@@ -142,6 +175,26 @@ body {
   display: table;
 }
 .banner:after {
+  clear: both;
+}
+.banner div {
+  *zoom: 1;
+  width: auto;
+  max-width: 120rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 2rem;
+}
+.banner div:before,
+.banner div:after {
+  content: '';
+  display: table;
+}
+.banner div:after {
   clear: both;
 }
 .page-content {
@@ -154,7 +207,6 @@ body {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  border: 1px solid #a3a3a3;
   min-height: 60rem;
   padding: 1rem 2rem;
 }
@@ -168,6 +220,18 @@ body {
 }
 .page-footer {
   *zoom: 1;
+  background: #9577ab;
+}
+.page-footer:before,
+.page-footer:after {
+  content: '';
+  display: table;
+}
+.page-footer:after {
+  clear: both;
+}
+.page-footer div {
+  *zoom: 1;
   width: auto;
   max-width: 120rem;
   float: none;
@@ -176,15 +240,14 @@ body {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  background: #9577ab;
-  padding: 2.5rem;
+  padding: 2rem;
 }
-.page-footer:before,
-.page-footer:after {
+.page-footer div:before,
+.page-footer div:after {
   content: '';
   display: table;
 }
-.page-footer:after {
+.page-footer div:after {
   clear: both;
 }
 .error {
