@@ -4,6 +4,7 @@ body {
 }
 div,
 header,
+main,
 footer,
 nav,
 menu,
@@ -31,10 +32,11 @@ ol,
 li {
   list-style-type: none;
 }
-a,
-a:hover,
-a:visited {
+a {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 p {
   padding: 0 0 2rem;
@@ -94,6 +96,9 @@ h5 {
 }
 h6 {
   font-size: 2rem;
+}
+.banner {
+  background: #a0047e;
 }
 body {
   background: #ccc;
@@ -162,7 +167,6 @@ body {
 }
 .banner {
   *zoom: 1;
-  background: #a0047e;
   color: #e6e6e6;
   height: 300px;
 }
@@ -249,19 +253,19 @@ body {
 }
 .error {
   background: #a6373f;
-  border: 0.5rem solid #421619;
-  color: #421619;
+  border: 0.5rem solid #210b0d;
+  color: #210b0d;
   padding: 1rem;
 }
 .success {
   background: #3cbd2f;
-  border: 0.5rem solid #184c13;
-  color: #184c13;
+  border: 0.5rem solid #0c2609;
+  color: #0c2609;
   padding: 1rem;
 }
 .warning {
   background: #aa7c39;
-  border: 0.5rem solid #443217;
-  color: #443217;
+  border: 0.5rem solid #22190b;
+  color: #22190b;
   padding: 1rem;
 }
