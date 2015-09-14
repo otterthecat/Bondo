@@ -1,3 +1,4 @@
+@import './vendor/normalize/normalize.css';
 body {
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@ h6 {
   padding: 0;
 }
 ol,
-li {
+ul {
   list-style-type: none;
 }
 a {
@@ -39,7 +40,11 @@ a:hover {
   text-decoration: underline;
 }
 p {
-  padding: 0 0 2rem;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+p:first-of-type {
+  margin-top: 1rem;
 }
 form,
 fieldset {
@@ -79,6 +84,14 @@ body {
   font-size: 1.8rem;
   line-height: 2.8rem;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 h1 {
   font-size: 3rem;
 }
@@ -106,10 +119,16 @@ body {
   margin: 0;
   minWidth: 46rem;
 }
+.page-header,
+nav,
+.banner,
+.page-content,
+.page-footer {
+  padding: 1rem 2rem;
+}
 .page-header {
   *zoom: 1;
   background: #292929;
-  height: 6rem;
 }
 .page-header:before,
 .page-header:after {
@@ -119,7 +138,7 @@ body {
 .page-header:after {
   clear: both;
 }
-.page-header menu {
+.page-header .menu {
   *zoom: 1;
   width: auto;
   max-width: 120rem;
@@ -130,15 +149,15 @@ body {
   padding-left: 0;
   padding-right: 0;
 }
-.page-header menu:before,
-.page-header menu:after {
+.page-header .menu:before,
+.page-header .menu:after {
   content: '';
   display: table;
 }
-.page-header menu:after {
+.page-header .menu:after {
   clear: both;
 }
-.page-header menu li {
+.page-header .menu li {
   *zoom: 1;
   float: left;
   clear: none;
@@ -150,19 +169,19 @@ body {
   font-size: 1.6rem;
   text-align: center;
 }
-.page-header menu li:before,
-.page-header menu li:after {
+.page-header .menu li:before,
+.page-header .menu li:after {
   content: '';
   display: table;
 }
-.page-header menu li:after {
+.page-header .menu li:after {
   clear: both;
 }
-.page-header menu li:nth-child(3n) {
+.page-header .menu li:nth-child(3n) {
   margin-right: 0%;
   float: right;
 }
-.page-header menu li:nth-child(3n+1) {
+.page-header .menu li:nth-child(3n+1) {
   clear: both;
 }
 .banner {
@@ -188,7 +207,6 @@ body {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  padding: 2rem;
 }
 .banner div:before,
 .banner div:after {
@@ -206,10 +224,9 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
   min-height: 60rem;
-  padding: 1rem 2rem;
 }
 .page-content:before,
 .page-content:after {
@@ -241,7 +258,6 @@ body {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  padding: 2rem;
 }
 .page-footer div:before,
 .page-footer div:after {

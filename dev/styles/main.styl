@@ -1,6 +1,7 @@
 @import 'jeet'
 @import 'rupture'
 
+@import './vendor/normalize/normalize.css'
 @import './blocks'
 @require './variables'
 @import './mixins'
@@ -12,12 +13,18 @@ body
   margin: 0
   minWidth: minWidth
 
+.page-header,
+nav,
+.banner,
+.page-content,
+.page-footer
+  padding: 1rem 2rem
+
 .page-header
   cf(span(1))
   background: darken(baseColor, 80%)
-  height: 6rem
 
-  menu
+  .menu
     center(maxWidth)
 
     li
@@ -34,12 +41,10 @@ body
 
   div
     center(maxWidth)
-    padding: 2rem
 
 .page-content
-  center(maxWidth)
+  center(maxWidth, 2rem)
   min-height: 60rem
-  padding: 1rem 2rem
 
 .page-footer
   cf(span(1))
@@ -47,7 +52,6 @@ body
 
   div
     center(maxWidth)
-    padding: 2rem
 
 .error
   notify(errorColor)
