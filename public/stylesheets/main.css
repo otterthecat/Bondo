@@ -46,6 +46,10 @@ p:first-of-type {
 form,
 fieldset {
   padding: 1rem;
+  margin-bottom: 2rem;
+}
+fieldset {
+  margin-bottom: 1rem;
 }
 input[type='text'],
 select,
