@@ -2,21 +2,21 @@
 @import 'rupture'
 
 @import './vendor/normalize/normalize.css'
+@require './variables'
 @import './blocks'
 @import './forms'
-@require './variables'
 @import './mixins'
 @import './mixins/themes'
 
 body
-  background: baseColor
+  background: neutralLight
   font-family: primaryFont
   margin: 0
   minWidth: minWidth
 
 .page-header
   cf(span(1))
-  background: darken(baseColor, 80%)
+  background: darken(neutralColor, 80%)
 
   .menu
     center(maxWidth)
