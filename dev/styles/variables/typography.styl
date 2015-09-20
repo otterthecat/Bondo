@@ -3,10 +3,12 @@ accentFont = Georgia, serif
 
 html
   font-size: 62.5%
+  +below(800px)
+    font-size: 64%
 
 body
   font-size: 1.8rem
-  line-height: 2.8rem;
+  line-height: 2.8rem
 
 h1,h2,h3,h4,h5,h6
   margin: 0
@@ -28,3 +30,11 @@ h5
 
 h6
   font-size: 2rem
+
+ol, ul
+  list-style-type: none
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration underline

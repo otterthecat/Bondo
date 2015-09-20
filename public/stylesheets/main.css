@@ -13,6 +13,8 @@ section,
 form,
 fieldset,
 label,
+select,
+input,
 textarea,
 aside,
 ul,
@@ -29,19 +31,14 @@ h6 {
   margin: 0;
   padding: 0;
 }
-ol,
-ul {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+body > header,
+body > main,
+body > footer,
+body > section {
+  padding: 1rem 2rem;
 }
 p {
   margin: 0 0 2rem;
-  padding: 0;
 }
 p:first-of-type {
   margin-top: 1rem;
@@ -53,13 +50,7 @@ fieldset {
 input[type='text'],
 select,
 textarea {
-  box-sizing: border-box;
   width: 100%;
-}
-label input[type='text'],
-label select,
-label textarea {
-  display: block;
 }
 label.inline input,
 label.inline select,
@@ -79,6 +70,11 @@ button {
 }
 html {
   font-size: 62.5%;
+}
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 64%;
+  }
 }
 body {
   font-size: 1.8rem;
@@ -110,6 +106,16 @@ h5 {
 h6 {
   font-size: 2rem;
 }
+ol,
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 .banner {
   background: #a0047e;
 }
@@ -118,13 +124,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   minWidth: 46rem;
-}
-.page-header,
-nav,
-.banner,
-.page-content,
-.page-footer {
-  padding: 1rem 2rem;
 }
 .page-header {
   *zoom: 1;
