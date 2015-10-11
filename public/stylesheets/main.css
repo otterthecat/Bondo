@@ -98,6 +98,159 @@ p {
 p:first-of-type {
   margin-top: 1rem;
 }
+.quarters {
+  *zoom: 1;
+}
+.quarters:before,
+.quarters:after {
+  content: '';
+  display: table;
+}
+.quarters:after {
+  clear: both;
+}
+.quarters > * {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.75%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.quarters > *:before,
+.quarters > *:after {
+  content: '';
+  display: table;
+}
+.quarters > *:after {
+  clear: both;
+}
+.quarters > *:nth-child(4n) {
+  margin-right: 0%;
+  float: right;
+}
+.quarters > *:nth-child(4n+1) {
+  clear: both;
+}
+@media only screen and (max-width: 800px) {
+  .quarters > * {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quarters > *:first-child {
+    margin-left: auto;
+  }
+  .quarters > *:last-child {
+    margin-right: auto;
+  }
+}
+.thirds {
+  *zoom: 1;
+}
+.thirds:before,
+.thirds:after {
+  content: '';
+  display: table;
+}
+.thirds:after {
+  clear: both;
+}
+.thirds > * {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 31.33333333333333%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.thirds > *:before,
+.thirds > *:after {
+  content: '';
+  display: table;
+}
+.thirds > *:after {
+  clear: both;
+}
+.thirds > *:nth-child(3n) {
+  margin-right: 0%;
+  float: right;
+}
+.thirds > *:nth-child(3n+1) {
+  clear: both;
+}
+@media only screen and (max-width: 800px) {
+  .thirds > * {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .thirds > *:first-child {
+    margin-left: auto;
+  }
+  .thirds > *:last-child {
+    margin-right: auto;
+  }
+}
+.halves {
+  *zoom: 1;
+}
+.halves:before,
+.halves:after {
+  content: '';
+  display: table;
+}
+.halves:after {
+  clear: both;
+}
+.halves > * {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.halves > *:before,
+.halves > *:after {
+  content: '';
+  display: table;
+}
+.halves > *:after {
+  clear: both;
+}
+.halves > *:nth-child(2n) {
+  margin-right: 0%;
+  float: right;
+}
+.halves > *:nth-child(2n+1) {
+  clear: both;
+}
+@media only screen and (max-width: 800px) {
+  .halves > * {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .halves > *:first-child {
+    margin-left: auto;
+  }
+  .halves > *:last-child {
+    margin-right: auto;
+  }
+}
 form {
   margin-bottom: 2rem;
 }
